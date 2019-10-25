@@ -3,9 +3,8 @@ from playsound import playsound
 import os
 
 class myPlayer:
-    def __init__(self, path_to_sounds_stock, path_to_cfg):
+    def __init__(self, path_to_sounds_stock):
         self.path_to_sounds_stock = path_to_sounds_stock
-        self.path_to_cfg = path_to_cfg
         self.keys = []
         self.playing = False
         self.sounds = []
@@ -72,5 +71,5 @@ class myPlayer:
             
 
 
-player = myPlayer('./../../sounds','./../../sounds.txt')
+player = myPlayer('./../../sounds')
 
